@@ -1,6 +1,4 @@
-enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
-
-rootProject.name = "mobile-showcase"
+rootProject.name = "build-logic"
 
 pluginManagement {
     repositories {
@@ -19,10 +17,8 @@ dependencyResolutionManagement {
     }
 
     versionCatalogs {
-        create("libs")
+        create("libs") {
+            from(files("../gradle/libs.versions.toml"))
+        }
     }
 }
-
-includeBuild("build-logic")
-
-include(":app")

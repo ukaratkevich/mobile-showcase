@@ -1,6 +1,11 @@
 [versions]
 kotlin = "1.8.20"
+kotlin-language-version = "1.8"
 jvm-target = "11"
+
+kotlin-coroutines = "1.7.1"
+
+agp = "8.0.1"
 
 min-sdk = "21"
 target-sdk = "33"
@@ -14,8 +19,13 @@ junit = "4.13.2"
 junit-ext = "1.1.5"
 
 [libraries]
+kotlin-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlin-coroutines" }
+
 androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
 androidx-appcomat = { module = "androidx.core:core-ktx", version.ref = "androidx-appcompat" }
+
+agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 
 compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
 compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
@@ -27,3 +37,7 @@ junit = { module = "junit:junit", version.ref = "junit" }
 junit-ext = { module = "junit:junit", version.ref = "junit-ext" }
 
 [plugins]
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
