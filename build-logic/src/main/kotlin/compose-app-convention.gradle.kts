@@ -5,7 +5,13 @@ plugins {
 }
 
 configure<ApplicationExtension> {
-    // TODO set up later
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
+    }
 
     dependencies {
         add("implementation", libs.compose.bom)

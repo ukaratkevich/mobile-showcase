@@ -18,6 +18,12 @@ configure<ApplicationExtension> {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
+    lint {
+        abortOnError = true
+        ignoreWarnings = false
+        warningsAsErrors = true
+    }
+
     buildFeatures {
         buildConfig = true
         dataBinding = false
