@@ -30,3 +30,9 @@ configure<ApplicationExtension> {
         viewBinding = false
     }
 }
+
+dependencies {
+    implementation(libs.androidx.core)
+    implementation(libs.androidx.appcompat)
+}
+

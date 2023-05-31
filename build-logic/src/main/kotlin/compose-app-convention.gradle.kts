@@ -1,7 +1,7 @@
 import com.android.build.api.dsl.ApplicationExtension
 
 plugins {
-    id("android-application-base-convention")
+    id("android-application-convention")
 }
 
 configure<ApplicationExtension> {
