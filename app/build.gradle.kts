@@ -26,4 +26,7 @@ android {
 
 dependencies {
     implementation("com.google.android.material:material:1.9.0")
+    implementation(libs.compose.activity)
+    implementation(libs.compose.material)
+    implementation(libs.compose.foundation)
 }

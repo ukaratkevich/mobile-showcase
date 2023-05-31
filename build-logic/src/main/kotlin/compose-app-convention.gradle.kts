@@ -12,8 +12,10 @@ configure<ApplicationExtension> {
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     }
+}
 
-    dependencies {
-        add("implementation", libs.compose.bom)
-    }
+dependencies {
+    implementation(platform(libs.compose.bom))
+    debugImplementation(libs.compose.ui.tooling)
+    debugImplementation(libs.compose.ui.tooling.preview)
 }
