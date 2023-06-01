@@ -25,4 +25,4 @@ dependencyResolutionManagement {
 
 includeBuild("build-logic")
 
-include(":app")
+include(":hello-compose")

@@ -3,14 +3,12 @@ plugins {
 }
 
 android {
-    namespace = "dev.karatkevich.mobile.showcase"
+    namespace = "dev.karatkevich.mobile.showcase.hello.compose"
 
     defaultConfig {
-        applicationId = "dev.karatkevich.mobile.showcase"
+        applicationId = "dev.karatkevich.mobile.showcase.hello.compose"
         versionCode = 1
         versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {

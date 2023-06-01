@@ -1,4 +1,4 @@
-package dev.karatkevich.mobile.showcase
+package dev.karatkevich.mobile.showcase.hello.compose
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
