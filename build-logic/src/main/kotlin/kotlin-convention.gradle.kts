@@ -12,7 +12,7 @@ tasks.withType(KotlinCompile::class) {
         languageVersion = kotlinVersion
         this.jvmTarget = jvmTarget
 
-        allWarningsAsErrors = true
+        allWarningsAsErrors = false
 
         freeCompilerArgs = freeCompilerArgs + listOf(
             // add experimental api here

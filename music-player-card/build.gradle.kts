@@ -27,4 +27,6 @@ dependencies {
     implementation(libs.compose.activity)
     implementation(libs.compose.material)
     implementation(libs.compose.foundation)
+    implementation(libs.coil.compose)
+    implementation(libs.androidx.pallete)
 }
