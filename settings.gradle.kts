@@ -26,3 +26,4 @@ dependencyResolutionManagement {
 includeBuild("build-logic")
 
 include(":hello-compose")
+include(":music-player-card")
